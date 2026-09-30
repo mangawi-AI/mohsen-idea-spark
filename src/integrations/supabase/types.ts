@@ -14,7 +14,36 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      usage_counters: {
+        Row: {
+          bucket_key: string
+          count: number
+          created_at: string
+          day: string
+          id: string
+          last_request_at: string
+          scope: string
+        }
+        Insert: {
+          bucket_key: string
+          count?: number
+          created_at?: string
+          day?: string
+          id?: string
+          last_request_at?: string
+          scope: string
+        }
+        Update: {
+          bucket_key?: string
+          count?: number
+          created_at?: string
+          day?: string
+          id?: string
+          last_request_at?: string
+          scope?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
