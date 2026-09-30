@@ -24,26 +24,17 @@ const writeStored = (key: string, value: string): void => {
 };
 
 export const usePreferences = () => {
-  const [lang, setLang] = useState<UiLang>("en");
+  const [lang, setLang] = useState<UiLang>("ar");
   const [theme, setTheme] = useState<Theme>("light");
   const [hydrated, setHydrated] = useState(false);
 
   useEffect(() => {
+    // Defaults: Arabic + light mode, unless the visitor saved a preference.
     const storedLang = readStored(LANG_KEY);
-    const nextLang: UiLang =
-      storedLang === "ar" || storedLang === "en"
-        ? storedLang
-        : navigator.language.toLowerCase().startsWith("ar")
-          ? "ar"
-          : "en";
+    const nextLang: UiLang = storedLang === "en" ? "en" : "ar";
 
     const storedTheme = readStored(THEME_KEY);
-    const nextTheme: Theme =
-      storedTheme === "dark" || storedTheme === "light"
-        ? storedTheme
-        : window.matchMedia("(prefers-color-scheme: dark)").matches
-          ? "dark"
-          : "light";
+    const nextTheme: Theme = storedTheme === "dark" ? "dark" : "light";
 
     setLang(nextLang);
     setTheme(nextTheme);
