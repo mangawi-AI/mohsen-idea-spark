@@ -8,7 +8,7 @@ import { COOLDOWN_SECONDS, MAX_TOPIC_LENGTH, containsArabic, type Platform, type
 const VISITOR_DAILY_CAP = 12;
 const GLOBAL_DAILY_CAP = 150;
 const AI_TIMEOUT_MS = 12_000;
-const DEFAULT_MODEL = "gemini-2.5-flash-lite";
+const DEFAULT_MODEL = "gemini-3.5-flash-lite";
 
 const inputSchema = z.object({
   topic: z.string(),
