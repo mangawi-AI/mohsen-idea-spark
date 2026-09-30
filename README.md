@@ -56,7 +56,7 @@ bun run dev
 | Secret | Required | Default |
 | --- | --- | --- |
 | `GEMINI_API_KEY` | For the AI path (template fallback works without it) | — |
-| `GEMINI_MODEL` | Optional | `gemini-2.5-flash-lite` |
+| `GEMINI_MODEL` | Optional | `gemini-3.5-flash-lite` |
 | `VISITOR_HASH_SALT` | Generated automatically | — |
 
 Work sample by Mohsen Sami Angawi · محسن سامي عنقاوي
