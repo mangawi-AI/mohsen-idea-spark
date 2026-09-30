@@ -1,18 +1,18 @@
-<!-- LOVABLE:BEGIN -->
-> [!IMPORTANT]
-> This project is connected to [Lovable](https://lovable.dev). Avoid rewriting
-> published git history — force pushing, or rebasing/amending/squashing commits
-> that are already pushed — as it rewrites history on Lovable's side and the
-> user will likely lose their project history.
->
-> Commits you push to the connected branch sync back to Lovable and show up in
-> the editor, so keep the branch in a working state.
-<!-- LOVABLE:END -->
-
 # Mohsen Agency Content Idea Generator · وكالة محسن
 
 A small bilingual (AR/EN) web app that turns a topic into five short-form content hooks
 tuned for Instagram Reels, TikTok or Snapchat.
+
+**Live demo:** https://mohsen-idea-spark.lovable.app
+
+## Screenshots
+
+<table>
+  <tr>
+    <td align="center"><img src="docs/screenshot-ar-light.png" width="320" alt="Arabic (RTL), light mode, TikTok"><br>Arabic (RTL), light mode, TikTok</td>
+    <td align="center"><img src="docs/screenshot-en-dark.png" width="320" alt="English, dark mode, Instagram"><br>English, dark mode, Instagram</td>
+  </tr>
+</table>
 
 ## Stack
 
@@ -60,3 +60,14 @@ bun run dev
 | `VISITOR_HASH_SALT` | Generated automatically | — |
 
 Work sample by Mohsen Sami Angawi · محسن سامي عنقاوي
+
+<!-- LOVABLE:BEGIN -->
+> [!IMPORTANT]
+> This project is connected to [Lovable](https://lovable.dev). Avoid rewriting
+> published git history — force pushing, or rebasing/amending/squashing commits
+> that are already pushed — as it rewrites history on Lovable's side and the
+> user will likely lose their project history.
+>
+> Commits you push to the connected branch sync back to Lovable and show up in
+> the editor, so keep the branch in a working state.
+<!-- LOVABLE:END -->
